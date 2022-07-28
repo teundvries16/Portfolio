@@ -1,0 +1,443 @@
+/* General */
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.text_primary {
+    color: gold;
+}
+
+.text_secondary {
+    color: white;
+}
+
+.bg_light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+p {
+    color: white;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    color: gold;
+    background-color: #333333;
+    padding: 1.5rem 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid gold;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: gold;
+    padding: 0.75rem;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s;
+}
+
+#navbar li a:hover {
+    border-bottom: 3px solid gold;
+}
+
+/* Homepage */
+#homepage {
+    background: url(background_homepage.avif) no-repeat center center/cover;
+    filter: brightness(150%);
+    height: 91.7vh;
+    width: 210vh;
+}
+
+.homepage_content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.homepage_content h1 {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+
+/* About */
+#about {
+    border-bottom: 1px solid gold;
+    border-top: 1px solid gold;
+    padding: 5rem 0;
+}
+
+#about h2, #skills h2, #hobby h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#about h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p.lead {
+    margin-bottom: 1rem;
+}
+
+#about .about_content {
+    display: flex;
+}
+
+#about .about_text,
+#about .about_image {
+    flex: 1;
+}
+
+#about .about_text {
+    text-align: justify;
+}
+
+#about .about_image img {
+    display: block;
+    margin-left: auto;
+    width: 75%;
+    border-radius: 40%;
+    margin-top: 60px;
+}
+
+/* Skills */
+#skills h2 {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+#skills .container {
+    display: flex;
+    width: 100%;
+    justify-items: center;
+}
+
+
+#skills table {
+    width: 1085px;
+    height: 60vh;
+    margin-bottom: 5rem;
+    background: gold;
+    border-radius: 15px;
+}
+
+#skills td {
+    text-align: center;
+    color: #333333;
+    font-size: 1.3rem;
+}
+
+#skills th {
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+/* Work */
+#work {
+    background-color: #333333;
+    height: 100vh;
+    border-top: 1px solid gold;
+}
+
+.work_bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #333333;
+    padding: 5rem 0;
+    border-bottom: 1px solid gold;
+}
+
+#work h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+#work .boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+#work .box {
+    background-color: gold;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#work .box:first-child, #work .box:nth-child(2) {
+    margin-bottom: 3rem;
+}
+
+#work .box img {
+    border-radius: 50%;
+    margin-right: 2rem;
+    background: white;
+}
+
+#work p {
+    color: #333333;
+}
+
+/* Sports */
+#sports {
+    padding: 5rem 0;
+    background-color: #333333;
+    border-bottom: 1px solid gold;
+}
+
+#sports h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+#sports .container h2 {
+    color: white;
+}
+
+#sports h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#sports .boxes {
+    display: flex;
+}
+
+#sports .box {
+    background: gold;
+    flex: 1;
+    padding: 3rem;
+    margin: 0 3rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+#sports .box p {
+    color: #333333;
+}
+
+/* Hobby's */
+#hobby {
+    padding: 5rem 0;
+    border-bottom: 1px solid gold;
+}
+
+#hobby h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#hobby p.lead {
+    margin-bottom: 1rem;
+}
+
+#hobby .hobby_content {
+    display: flex;
+}
+
+#hobby .hobby_text,
+#hobby .hobby_images {
+    flex: 1;
+}
+
+#hobby .hobby_text {
+    text-align: justify;
+}
+
+#hobby .hobby_images img {
+    display: block;
+    margin-left: auto;
+    width: 75%;
+    border-radius: 40%;
+    margin-top: 60px;
+}
+
+/* School */
+#school {
+    background-color: #333333;
+    height: 89vh;
+    border-bottom: 1px solid gold;
+}
+
+.school_bg {
+    position: absolute;
+    height: 89%;
+    width: 100%;
+}
+
+#school h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 4.5rem;
+    color: white;
+}
+
+#school .boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+#school .box {
+    background: gold;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#school .box p {
+    color: #333333;
+}
+
+#school .box:first-child, #school .box:nth-child(2) {
+    margin-bottom: 3rem;
+}
+
+#school .box img {
+    border-radius: 50%;
+    margin-right: 2rem;
+    background: white;
+}
+
+#school p {
+    color: white;
+}
+
+/* SOD */
+#SOD {
+    background-color: #333333;
+    padding: 5rem;
+    border-bottom: 1px solid gold;
+}
+
+#SOD h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+#SOD h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#SOD .boxes {
+    display: flex;
+}
+
+#SOD .box {
+    background-color: gold;
+    flex: 1;
+    padding: 3rem;
+    margin: 0 3rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+#SOD .box p {
+    color: #333333;
+}
+
+/* future */
+#future {
+    padding: 5rem 0;
+}
+
+#future h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#future h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#future p.lead {
+    margin-bottom: 1rem;
+}
+
+#future .future_content {
+    display: flex;
+}
+
+#future .future_text,
+#future .future_images {
+    flex: 1;
+}
+
+#future .future_text {
+    text-align: justify;
+}
+
+#future .future_images img {
+    display: block;
+    margin-left: auto;
+    width: 75%;
+    margin-top: 60px;
+}
